@@ -25,7 +25,9 @@ searchBox.addEventListener("keypress", async function searchCity(e, city) {
       //Bad request from server checking
     } else if (response.status === 400) {
       errorWrap.style.display = 'block';
-      errorWrap.textContent = 'Please enter correct name of city: ';
+      errorWrap.textContent = 'No matching location found ';
+      errorWrap.style.textAlign = 'center';
+      errorWrap.style.width = '700px';
       card.style.display = 'none';
       loader.style.display = 'block';
       searchBox.value = '';
