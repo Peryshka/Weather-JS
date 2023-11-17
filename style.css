@@ -101,7 +101,7 @@ body {
   margin-bottom: 20px;
 }
 
-#country1 {
+#country {
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -116,6 +116,18 @@ span:last-child {
 
 .date1 {
   margin-top: 20px;
+}
+
+.inner-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-cond {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
 }
 
 /* The end of Card Styles */
