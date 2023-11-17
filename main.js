@@ -19,6 +19,7 @@ searchBox.addEventListener("keypress", async function searchCity(e, city) {
        errorWrap.textContent = 'Server can\'t find requested resource';
        card.style.display = 'none';
       loader.style.display = 'block';
+      searchBox.value = '';
        return;
       //The end of Page was not found Block
       //Bad request from server checking
@@ -27,6 +28,7 @@ searchBox.addEventListener("keypress", async function searchCity(e, city) {
       errorWrap.textContent = 'Please enter correct name of city: ';
       card.style.display = 'none';
       loader.style.display = 'block';
+      searchBox.value = '';
       return;
     }
     //The end of Bad request from server checking
