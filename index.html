@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@700&family=Lora:wght@700&family=Montserrat:wght@400;700&family=Nanum+Gothic:wght@800&family=Noto+Sans&family=Open+Sans&family=Oxygen:wght@400;700&family=Poppins&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page-wrap">
+  <div class="container">
+    <!--    General Wrap-->
+    <div class="general-wrap">
+      <!--      searchBox Block-->
+      <input type="text" placeholder="Search for a city..." class="searchBox">
+      <!--    The end of searchBox Block-->
+      <!--      Error Show Block-->
+      <div class="errorWrap">
+        <span class="error">Please enter the name of the city and press enter to see the results</span>
+      </div>
+      <!--    The end of Error Show Block-->
+      <!--      Card Block-->
+      <div class="card">
+        <!--        time-location-details block-->
+        <div class="time-location-details">
+          <span class="location">Bishkek <span id="country1">Kyrgyzstan</span></span>
+          <span class="date">Wednesday, November 17, </span>
+          <span class="time">12:02</span>
+        </div>
+        <!--  The end of time-location-details block-->
+        <!--        temp-condition-details block-->
+        <div class="temp-condition-details">
+          <div class="inner-block">
+            <i class="main-cond"></i>
+            <h2 class="temp">3 °c</h2>
+          </div>
+          <span class="cond">Sunny</span>
+        </div>
+        <!--    The end of temp-condition-details block-->
+        <!--        other-details block-->
+        <div class="other-details">
+          <span class="feels">Feels like: <span class="temp-feels">3 °C</span></span>
+          <span class="humidity">Humidity: <span class="humid-value">76%</span></span>
+          <span class="wind">Wind: <span class="wind-value">3.6 kp/h</span></span>
+        </div>
+        <!--    The end of     other-details block-->
+      </div>
+      <!--   The end of Card Block-->
+    </div>
+    <!--  The end of General Wrap-->
+  </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
+

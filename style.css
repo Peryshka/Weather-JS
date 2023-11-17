@@ -1,0 +1,125 @@
+/* Reset Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+/* The end of Reset Styles */
+
+.container {
+  margin: 0 auto;
+  width: 720px;
+}
+
+/* General Styles */
+.general-wrap {
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* input style */
+.searchBox {
+  border: 3px solid #28688C;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  outline: blue;
+  padding: 0 5px;
+}
+
+.searchBox:hover {
+  border: 3px solid blue;
+}
+
+/* The end of input style */
+
+/* Error Block Style */
+.errorWrap {
+  background: #28688C;
+  box-shadow: 1px 5px 25px 3px #444;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+/* The end of Error Block Style */
+
+/* Card Styles */
+.card {
+  display: flex;
+  background: #28688C;
+  box-shadow: 1px 5px 25px 3px #444;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.time-location-details {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.temp-condition-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.other-details {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.temp {
+  font-size: 75px;
+  font-weight: 600;
+}
+
+.location {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#country1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+span {
+  margin-bottom: 20px;
+}
+
+span:last-child {
+  margin-bottom: 0;
+}
+
+.date1 {
+  margin-top: 20px;
+}
+
+/* The end of Card Styles */
+/* The end of General Styles */
+
+
+
