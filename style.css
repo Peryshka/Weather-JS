@@ -146,6 +146,7 @@ span:last-child {
   animation-delay: 0.25s;
   margin-top: 100px;
 }
+
 .dot-pulse::before, .dot-pulse::after {
   content: "";
   display: inline-block;
@@ -157,11 +158,13 @@ span:last-child {
   background-color: #28688C;
   color: #28688C;
 }
+
 .dot-pulse::before {
   box-shadow: 9984px 0 0 -5px;
   animation: dot-pulse-before 1.5s infinite linear;
   animation-delay: 0s;
 }
+
 .dot-pulse::after {
   box-shadow: 10014px 0 0 -5px;
   animation: dot-pulse-after 1.5s infinite linear;
@@ -179,6 +182,7 @@ span:last-child {
     box-shadow: 9984px 0 0 -5px;
   }
 }
+
 @keyframes dot-pulse {
   0% {
     box-shadow: 9999px 0 0 -5px;
@@ -190,6 +194,7 @@ span:last-child {
     box-shadow: 9999px 0 0 -5px;
   }
 }
+
 @keyframes dot-pulse-after {
   0% {
     box-shadow: 10014px 0 0 -5px;
@@ -201,8 +206,10 @@ span:last-child {
     box-shadow: 10014px 0 0 -5px;
   }
 }
+
 /* The end of loader */
 /* The end of General Styles */
+
 
 
 
