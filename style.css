@@ -144,6 +144,7 @@ span:last-child {
   box-shadow: 9999px 0 0 -5px;
   animation: dot-pulse 1.5s infinite linear;
   animation-delay: 0.25s;
+  margin-top: 100px;
 }
 .dot-pulse::before, .dot-pulse::after {
   content: "";
@@ -200,7 +201,6 @@ span:last-child {
     box-shadow: 10014px 0 0 -5px;
   }
 }
-
 /* The end of loader */
 /* The end of General Styles */
 
