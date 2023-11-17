@@ -8,10 +8,20 @@ searchBox.addEventListener("keypress", async function searchCity(e, city) {
   if(e.key === 'Enter' && e.target.value) {
     city = searchBox.value;
     const response = await fetch(API_URL + 'key=' + API_KEY + '&q=' + city);
+    if(response.status === 404) {
+       errorWrap.style.display = 'block';
+       errorWrap.textContent = 'Server can\'t find requested resource';
+       card.style.display = 'none';
+       return;
+    } else if (response.status === 400) {
+      errorWrap.style.display = 'block';
+      errorWrap.textContent = 'Please enter correct name of city: ';
+      card.style.display = 'none';
+      return;
+    }
     const data = await response.json();
     searchBox.disabled=true;
     console.log(data);
-    card.style.display = 'block';
     errorWrap.style.display = 'none';
     card.style.display = 'flex';
     searchBox.disabled=false;
@@ -42,7 +52,9 @@ searchBox.addEventListener("keypress", async function searchCity(e, city) {
     country.style.display = 'none';
   } else {
     errorWrap.style.display = 'block';
+    errorWrap.textContent = 'Please enter the name of the city and press enter to see the results';
     card.style.display = 'none';
+    return;
   }
 });
 
