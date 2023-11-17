@@ -41,7 +41,7 @@ searchBox.addEventListener("keypress", async function searchCity(e, city) {
     searchBox.disabled = false;
     searchBox.value = '';
     //get data from server and show on the web-page
-    let location = document.querySelector('.location');
+    const location = document.querySelector('.location');
     location.textContent = data.location.name + ', ' + data.location.country;
     const date1 = document.querySelector('.date');
     const localtime = data.location.localtime.split(' ')
